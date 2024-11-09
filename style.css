@@ -1,0 +1,128 @@
+#themeToggle i {
+  transition: transform 0.4s ease-in-out, color 0.4s ease-in-out;
+  transform-origin: center;
+}
+
+#themeToggle .bi-sun-fill {
+  color: #f39c12;
+}
+
+#themeToggle .bi-moon-fill {
+  color: #3498db;
+}
+
+#mainTitle {
+  font-size: 5em;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  background-image: none;
+}
+
+#mainTitle:hover {
+  background-image: url('https://raw.githubusercontent.com/khrome/ansi-gif/HEAD/Samples/nyan.gif'); /* Reemplaza con la URL de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.article {
+  border-radius: 10px;
+  padding: 20px 30px;
+  max-width: 400px;
+  font-family: monospace;
+  font-size: larger;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+[data-bs-theme="light"] .article {
+  color: #212529;
+  background-color: #fff;
+}
+
+[data-bs-theme="dark"] .article {
+  color: #ffffff;
+  background-color: #202529;
+}
+
+#linuxCarousel .carousel-inner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+#linuxCarousel .carousel-control-prev,
+#linuxCarousel .carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#linuxCarousel .carousel-inner {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 80px;
+}
+
+@media (max-width: 576px) {
+  #linuxCarousel {
+    order: 2;
+    margin-top: 20px; 
+  }
+
+  article {
+    order: 1;
+  }
+
+  #linuxCarousel .carousel-inner img {
+    height: 200px; 
+  }
+  #linuxCarousel .carousel-inner {
+    top: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  #linuxCarousel {
+    order: 2; 
+  }
+
+  article {
+    order: 1;
+  }
+
+  #linuxCarousel .carousel-inner img {
+    height: 250px;
+  }
+  #linuxCarousel .carousel-inner {
+    top: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  #linuxCarousel {
+    order: 1;
+  }
+
+  article {
+    order: 0;
+  }
+
+  #linuxCarousel .carousel-inner img {
+    height: 350px;
+  }
+  .carousel-indicators {
+    position: relative;
+    top: 480px;
+  }
+}
+#copy {
+  margin-left: 20px;
+}
+

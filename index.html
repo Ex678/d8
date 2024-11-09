@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>¿Qué es Linux?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://static-00.iconduck.com/assets.00/linux-tux-icon-1779x2048-bqo0ieex.png" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://cdn.icon-icons.com/icons2/1381/PNG/512/tux_94512.png" alt="" width="32" height="32">Inicio
+          </a>
+          <button id="themeToggle" class="btn"><i class="bi bi-sun-fill"></i></button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container text-center mt-5">
+        <h1 id="mainTitle" class="display-4 fw-bold">This, is Linux</h1>
+      </div>
+      <div class="container d-flex flex-column flex-md-row mt-4">
+        <!-- Article -->
+        <div class="article flex-grow-1">
+          <p class="placeholder-glow">Linux es un sistema operativo de código abierto basado en Unix que impulsa millones de dispositivos en todo el mundo, desde servidores y computadoras personales hasta teléfonos móviles, sistemas empotrados y más. Nacido en 1991 como un proyecto del entonces estudiante Linus Torvalds, Linux se ha convertido en el motor que impulsa la mayoría de los servidores de Internet, dispositivos Android y gran parte de la infraestructura tecnológica global.</p>
+        </div>
+        <div id="linuxCarousel" class="carousel slide ms-4 flex-grow-1" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#linuxCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#linuxCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#linuxCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://static-assets.codecademy.com/Courses/learn-linux/ubuntu-desktop/app-demo.gif" class="d-block w-100" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+              <img src="https://lucasfcosta.com/assets/cli-ux/interactive-mode.gif" class="d-block w-100" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+              <img src="https://user-images.githubusercontent.com/11061198/38118017-c8497fc6-33d5-11e8-82d2-83a68bbc687d.gif" class="d-block w-100" alt="Imagen 3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#linuxCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#linuxCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <span class="mb-3 mb-md-0 text-body-secondarys" id="copy">© 2024 TalentoTech</span>
+      </div>
+    </footer>
+  </body>
+</html>
